@@ -1,3 +1,10 @@
+roborio-sysroot (1.3) stable; urgency=medium
+
+  * Update to 2017 image dependencies
+
+  -- WPILib Developers <wpilib@wpi.edu>
+  -- Thad House <thadhouse1@gmail.com>
+
 roborio-sysroot (1.2) stable; urgency=medium
 
   * Update to 2016 image dependencies
