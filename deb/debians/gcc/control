@@ -34,7 +34,7 @@ Package: libgcc-4.9-dev-frc-armel-cross
 Architecture: any
 Section: libdevel
 Priority: optional
-Recommends: lilibc6-dev-frc-armel-cross (>= 2.17)
+Recommends: libc6-dev-frc-armel-cross (>= 2.17)
 Depends: gcc-4.9-arm-frc-linux-gnueabi-base (= ${binary:Version}), libgcc1-frc-armel-cross (>= ${binary:Version}), libgomp1-frc-armel-cross (>= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Description: GCC support library (development files)
  This package contains the headers and static library files necessary for
@@ -45,7 +45,7 @@ Architecture: any
 Section: devel
 Priority: extra
 Depends: gcc-4.9-arm-frc-linux-gnueabi-base (= ${binary:Version}), cpp-4.9-arm-frc-linux-gnueabi (= ${binary:Version}), binutils-arm-frc-linux-gnueabi (>= ${binutils:Version}), libgcc-4.9-dev-frc-armel-cross (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
-Recommends: lilibc6-dev-frc-armel-cross (>= 2.17)
+Recommends: libc6-dev-frc-armel-cross (>= 2.17)
 Suggests: gcc-4.9-doc (>= ${gcc:SoftVersion}), gcc-4.9-locales (>= ${gcc:SoftVersion})
 Provides: c-compiler-arm-frc-linux-gnueabi
 Description: GNU C compiler
@@ -111,7 +111,7 @@ Package: libstdc++6-dev-frc-armel-cross
 Architecture: all
 Section: devel
 Priority: extra
-Depends: gcc-4.9-arm-frc-linux-gnueabi-base (= ${binary:Version}), libgcc-4.9-dev-frc-armel-cross (= ${binary:Version}), libstdc++6-frc-armel-cross (>= ${binary:Version}), lilibc6-dev-frc-armel-cross (>= 2.17), ${misc:Depends}
+Depends: gcc-4.9-arm-frc-linux-gnueabi-base (= ${binary:Version}), libgcc-4.9-dev-frc-armel-cross (= ${binary:Version}), libstdc++6-frc-armel-cross (>= ${binary:Version}), libc6-dev-frc-armel-cross (>= 2.17), ${misc:Depends}
 Provides: libstdc++-dev-frc-armel-cross, libstdc++-dev-armel-dcv1, libstdc++6-dev-armel-dcv1, libstdc++6-4.9-dev-frc-armel-cross
 Conflicts: libstdc++6-4.9-dev-frc-armel-cross
 Description: GNU Standard C++ Library v3 (development files)
