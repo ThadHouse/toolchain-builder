@@ -49,9 +49,9 @@ jobs:
 
         cd mac
         make sysroot
-        sudo gcp sysroot-install/usr/local/* /usr/local/ -r
+        sudo gcp sysroot-install/opt/* /opt/ -r
         make binutils
-        sudo gcp binutils-install/usr/local/* /usr/local/ -r
+        sudo gcp binutils-install/opt/* /opt/ -r
 
         make gcc gdb tree pkg tarpkg
 
