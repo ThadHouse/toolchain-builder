@@ -40,9 +40,6 @@ jobs:
 
         chmod +x ./repack.sh
         ./repack.sh
-        echo "ran repack"
-
-        ls -la
 
         echo alias ar=gar
         echo alias tar=gtar
@@ -50,11 +47,11 @@ jobs:
         cd mac
         make sysroot
         ls -la sysroot-install/opt
-        sudo gcp sysroot-install/opt/* /opt/ -r
+        sudo gcp sysroot-install/opt/* /opt/frc2019 -r
         ls -la /opt
         make binutils
         ls -la binutils-install/opt
-        sudo gcp binutils-install/opt/* /opt/ -r
+        sudo gcp binutils-install/opt/* /opt/frc2019 -r
         ls -la /opt
 
         make gcc gdb tree pkg tarpkg
