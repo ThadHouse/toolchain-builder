@@ -49,9 +49,13 @@ jobs:
 
         cd mac
         make sysroot
+        ls -la sysroot-install/opt
         sudo gcp sysroot-install/opt/* /opt/ -r
+        ls -la /opt
         make binutils
+        ls -la binutils-install/opt
         sudo gcp binutils-install/opt/* /opt/ -r
+        ls -la /opt
 
         make gcc gdb tree pkg tarpkg
 
